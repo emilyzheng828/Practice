@@ -3,7 +3,6 @@ def shell_sort(array)
   n = array.size
   (1..(Math.log(n,2).floor)).each do |k| # HACK 
     gap = (n/(2**k)).floor
-    #require 'pry'; binding.pry
     puts gap
     forward_steps = n - gap
     forward_steps.times do |i|  
