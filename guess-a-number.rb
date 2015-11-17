@@ -1,15 +1,13 @@
 
 def guess_a_number
-  my_number = rand(0..1000)
-  puts "Guess a number between 0 to 1000"
+  my_number = rand(0..100)
+  puts "Guess a number between 0 to 100"
   6.times do
     your_number = gets.strip.to_i
     case
     when my_number > your_number
-      #get_a_number_low
       puts "Too small, try again"
     when  my_number < your_number
-      #get_a_number_high
       puts "Too big, try again"
     else 
       puts "Congratulations! "
