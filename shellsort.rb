@@ -10,7 +10,7 @@ def shell_sort(array)
         #array[i], array[gap+i] = array[gap+i], array[i]
         swap_num(array,i,gap+i)
         if i > 0
-          for j in 1..i do
+          (1..i).each do |j|
             if array[i-j] > array[gap+i-j]
               #array[i-j],array[gap+i-j] = array[gap+i-j], array[i-j]
               swap_num(array,i-j,gap+i-j)
@@ -23,7 +23,6 @@ def shell_sort(array)
     end
   end
   array
-  #at_exit { puts "Well done, Emily!"}
 end
 
 def swap_num(array,a,b) 
@@ -33,3 +32,4 @@ array = [123, -212, -350, 709, 637, -961, -537, -923, 764, 485, -368, -802, -758
 array2 = array.dup
 puts shell_sort(array) == array2.sort
           
+at_exit { puts "Well done, Emily!"}
