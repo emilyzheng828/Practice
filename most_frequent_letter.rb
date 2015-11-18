@@ -5,8 +5,8 @@ n = letters.size
 hash = {}
 n.times do |i,num|
 letters.each {|i, num| hash[i] = letters.count(i)}
+puts hash
 end
-hash
 end
 
 
