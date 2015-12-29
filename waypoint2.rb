@@ -1,15 +1,15 @@
 class MusicPlayer
   def initialize(songs)
     @songs = songs  
-    @point = 0
+    @pointer= 0
   end
   
   def playing
-    @songs[@point]
+    @songs[@pointer]
   end
 
   def play(track)
-    @point = track
+    @pointer = track
   end
 end
 

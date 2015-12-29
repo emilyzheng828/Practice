@@ -1,19 +1,19 @@
 class Horse
-  def initialize
-    @value = false 
-  end
+	def initialize
+		@value = false 
+	end
 
-  def galloping?
-   @value 
+	def galloping?
+		@value 
 	end
 
 	def gallop
-    @value =  true 	
-  end
+		@value =  true 	
+	end
 
-  def rest
+	def rest
 		@value = false		
-  end
+	end
 end
 
 bessie = Horse.new
