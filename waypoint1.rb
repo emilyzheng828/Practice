@@ -1,6 +1,6 @@
 class Horse
 	def initialize
-		@value = false 
+		@value = false
 	end
 
 	def galloping?
