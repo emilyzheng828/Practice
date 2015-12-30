@@ -10,7 +10,7 @@ def ask_tip_rate
 end
 
 def tip_amount
-  @tip = @bill.to_i * @tip_rate.to_i
+  @tip = @bill.to_i * (@tip_rate.to_i/100).round(2)
   puts "The tip is $ #{@tip}"
 end
 
